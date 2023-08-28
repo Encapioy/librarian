@@ -9,15 +9,19 @@
     <div class="pe-16">
 
       <v-btn class="me-5">
-        <router-link class="text-decoration-none text-primary font-weight-bold" to="/">About</router-link>
+        <router-link class="text-decoration-none text-primary font-weight-bold" to="/">Home</router-link>
       </v-btn>
 
       <v-btn class="me-5">
-        <router-link class="text-decoration-none text-primary font-weight-bold" to="/">Benefit</router-link>
+        <router-link class="text-decoration-none text-secondary font-weight-bold" to="/self-improvement">Self-Improvement</router-link>
       </v-btn>
 
       <v-btn class="me-5">
-        <router-link class="text-decoration-none text-primary font-weight-bold" to="/">Books</router-link>
+        <router-link class="text-decoration-none text-secondary font-weight-bold" to="/novel">Novel</router-link>
+      </v-btn>
+
+      <v-btn class="me-5">
+        <router-link class="text-decoration-none text-secondary font-weight-bold" to="/biography">Biography</router-link>
       </v-btn>
 
     </div>
@@ -27,3 +31,4 @@
 <script setup>
   //
 </script>
+

@@ -51,7 +51,7 @@
       <v-row>
         <v-col cols="3" v-for="book in books" :key="book.title">
           <v-hover v-slot:default="{ isHovering, props }">
-            <v-card v-bind="props" :loading="loading" @click="reserve" class="mx-auto my-12 bg-tertiary">
+            <v-card v-bind="props" :loading="loading" @click="reserve" class="mx-auto my-12 bg-tertiary" height="500px">
               <template v-slot:loader="{ isActive }">
                 <v-progress-linear :active="isActive" color="deep-purple" height="4" indeterminate></v-progress-linear>
               </template>
@@ -92,9 +92,11 @@
     </div>
 
   </v-responsive>
+  <FooterHome />
 </template>
 
 <script setup>
+import FooterHome from '@/components/FooterHome.vue'
 import { ref } from "vue";
 
 const books = ref([
@@ -184,8 +186,8 @@ const books = ref([
     src: 'https://www.gramedia.com/blog/content/images/2021/08/1--22-.jpg',
     rate: 4.2,
     author: 'Alamsyah M Djafar Wiwit R. Fatkhurrahman',
-    description: '',
-    order: ''
+    description: 'Abdurrahman Wahid or who is more popularly known as Gus Dur, is a role model who is highly respected by many people, because of his dedication to society.',
+    order: 'https://shopee.co.id/product/82070300/4134858277?gclid=Cj0KCQjwi7GnBhDXARIsAFLvH4nLCbJi_ZuV27JQ71EKPhcWbNdxJ7td_ljL7kyeMVNbpIA0OPx0Ap0aAngAEALw_wcB'
   },
 
 

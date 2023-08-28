@@ -4,7 +4,8 @@
     <v-footer class="d-flex flex-column mt-n2 mb-n2 mx-n5">
       <div class="bg-secondary d-flex w-100 align-center justify-center px-4 py-5">
 
-        <v-btn color="quarternary" v-for="icon in icons" :key="icon" class="mx-4" :icon="icon" variant="plain" size="small"></v-btn>
+        <v-btn color="quarternary" v-for="icon in icons" :key="icon" class="mx-4" :icon="icon" variant="plain"
+          size="small"></v-btn>
       </div>
 
       <div class="px-4 py-2 bg-primary text-center text-tertiary w-100">

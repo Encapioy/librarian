@@ -51,7 +51,7 @@
       <v-row>
         <v-col cols="3" v-for="book in books" :key="book.title">
           <v-hover v-slot:default="{ isHovering, props }">
-            <v-card v-bind="props" :loading="loading" @click="reserve" class="mx-auto my-12 bg-tertiary">
+            <v-card v-bind="props" :loading="loading" @click="reserve" class="mx-auto my-12 bg-tertiary" height="500px">
               <template v-slot:loader="{ isActive }">
                 <v-progress-linear :active="isActive" color="deep-purple" height="4" indeterminate></v-progress-linear>
               </template>
@@ -91,11 +91,12 @@
       </v-row>
 
     </div>
-
   </v-responsive>
+  <FooterHome />
 </template>
 
 <script setup>
+import FooterHome from '@/components/FooterHome.vue'
 import { ref } from "vue";
 
 const books = ref([

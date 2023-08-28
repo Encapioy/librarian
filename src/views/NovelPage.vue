@@ -25,15 +25,13 @@
           </div>
         </v-col>
         <v-col cols="8">
-          <h3 class="text-body-1 text-left text-primary pb-5">Novel is a work of prose fiction written narratively and
-            usually written
-            in story form. The novel comes from the Italian language, namely novella which means a story or a piece of
-            story. People who write novels are called novelists.</h3>
-          <h3 class="text-body-1 text-left text-primary pb-5">In general, the novel is a long prose essay, containing a
-            series of
-            stories of a person's life with those around him by highlighting the character and characteristics of each
-            actor. In novels, it generally begins with important events experienced by story characters that later change
-            the fate of their lives.</h3>
+          <h3 class="text-body-1 text-left text-primary pb-5">Biographical text is a series of writings that contain the
+            history or journey of a person's life. However, you can also write your own resume.</h3>
+          <h3 class="text-body-1 text-left text-primary pb-5">This series of writings can be said to be self-biographical
+            texts or can also be called autobiography.</h3>
+          <h3 class="text-body-1 text-left text-primary pb-5">Self-biography text is writing that contains the life
+            journey of the author with a third-person point of view based on the knowledge or narrative of the character
+            concerned.</h3>
         </v-col>
       </v-row>
     </div>
@@ -45,7 +43,7 @@
       <v-row>
         <v-col cols="3" v-for="book in books" :key="book.title">
           <v-hover v-slot:default="{ isHovering, props }">
-            <v-card v-bind="props" :loading="loading" @click="reserve" class="mx-auto my-12 bg-tertiary">
+            <v-card v-bind="props" :loading="loading" @click="reserve" class="mx-auto my-12 bg-tertiary" height="500px">
               <template v-slot:loader="{ isActive }">
                 <v-progress-linear :active="isActive" color="deep-purple" height="4" indeterminate></v-progress-linear>
               </template>
@@ -86,9 +84,11 @@
     </div>
 
   </v-responsive>
+  <FooterHome />
 </template>
 
 <script setup>
+import FooterHome from '@/components/FooterHome.vue'
 import { ref } from "vue";
 
 const books = ref([
